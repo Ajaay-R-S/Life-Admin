@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fcfaf5" />
+  <title>Life Admin — Your next actions, organized</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <nav><a class="brand" href="#top" aria-label="Life Admin home"><span class="brand-mark">✦</span> Life Admin</a><span class="nav-note">A calmer way to keep up</span></nav>
+    <section id="composer" class="hero" aria-labelledby="headline">
+      <p class="eyebrow">YOUR PERSONAL ACTION DESK</p>
+      <h1 id="headline">Turn life’s messy messages<br/>into <em>your next actions.</em></h1>
+      <p class="intro">Paste the email, notice, itinerary, or note you’ve been meaning to deal with. We’ll make the important bits clear.</p>
+      <div class="composer-card">
+        <label for="message">What needs organizing?</label>
+        <textarea id="message" maxlength="5000" placeholder="Paste a message, plan, reminder, or note here…"></textarea>
+        <div class="composer-footer"><div class="examples" aria-label="Example messages"><span>Try an example:</span><button data-example="travel">✈ Travel itinerary</button><button data-example="school">◒ School email</button><button data-example="bill">$ Bill notice</button></div><button id="organize" class="primary">Organize my life <span>→</span></button></div>
+      </div>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+    <section id="loading" class="loading hidden" aria-live="polite"><div class="orb"></div><p>Finding the signal in the noise…</p></section>
+    <section id="results" class="results hidden" aria-live="polite"></section>
+    <section id="recent-section" class="recent hidden" aria-labelledby="recent-title"><div class="section-heading"><div><p class="eyebrow">YOUR HISTORY</p><h2 id="recent-title">Recently organized</h2></div><button id="clear-recent" class="text-button">Clear history</button></div><div id="recent-list" class="recent-list"></div></section>
+    <footer>Life Admin runs in demo mode. Your history stays in this browser.</footer>
+  </main>
+  <script src="local.js?v=1"></script>
+  <script src="app.js?v=6"></script>
+</body>
+</html>

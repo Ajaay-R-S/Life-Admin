@@ -1,0 +1,11 @@
+{
+  "name": "life-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turn messy messages into next actions.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check server.js"
+  }
+}
